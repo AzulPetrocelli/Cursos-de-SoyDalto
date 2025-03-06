@@ -1,0 +1,20 @@
+
+/*Selecciona a todos los elementos de forma generica*/
+* {
+    color: yellow;
+}
+
+/*Selecciona por elemento en este caso a todos los li*/
+li {
+    color: green;
+}
+
+/*Selecciona por clase a todos los elementos(pueden ser uno o mas) con la clase "ingrediente-faltante"*/
+.ingrediente-faltante {
+    color: red;
+}
+
+/*Selecciona por id al elemento (debe ser unico) con el id "ingrediente-secreto"*/
+#ingrediente-secreto {
+    color: blue;
+}
