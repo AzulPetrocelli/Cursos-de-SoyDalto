@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Enlazando CSS</title>
+
+    <!--Buena practica y la que usan todas las paginas bien hechas-->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Formas de asignar estilos</h1>
+
+    <h2>Asignarlo directamente a la etiqueta</h2>
+    <p style="color:red"> <!--Mala practica-->
+        Este parrafo tiene mayor especificidad por ende los valores que se le asignen a sus propiedades tienen mayor peso a comparacion de otros bloques de css que llaman al parrafo
+    </p>
+
+    <h2>Con la etiqueta style</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat excepturi aliquid perferendis commodi exercitationem repellendus praesentium, illum officia deleniti libero. Deleniti nisi ad sed harum aliquid recusandae rem! Atque, illo.
+    </p>
+    <style> /*Mejor pero no es recomendable*/
+        h1{
+            color:blue;
+        }
+        p {
+            color:red;
+        }
+    </style>
+</body>
+</html>
