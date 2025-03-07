@@ -1,0 +1,45 @@
+div {
+    background: red;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+
+.div_border {
+    border-style: solid;  /*Borde comun*/
+    border-style: dashed; /*Borde lineado*/
+    border-style: dotted; /*Borde punteado*/
+    border-style: double; /*Borde con doble linea*/
+    border-style: groove; /*Borde con efecto 3d*/
+    border-style: hidden; /*Borde oculto (sigue existiendo pero no se ve)*/
+
+    /*Hacer esto*/
+    border-color: black;
+    border-width: 3px ;
+    border-style: solid;
+
+    /*Es lo mismo que hacer esto*/
+    border: 3px solid black; /*--> border: tamaño estilo color;*/
+
+    /*Existen los bordes individuales*/
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+
+    /*Redondear bordes*/
+    border-radius: 5px; /*Redondea las 4 esquinas 5px*/
+    border-radius: 100%; /*Redondea las 4 esquinas al punto de formar un circulo*/
+    
+    /*Podemos tomar esquinas especificas*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 40px;
+
+    /*Redondear en diagonal*/
+    border-radius: 10px 50px; /*--> border-radius: (arr-izq y aba-der)px (arr-der y aba-izq)px*/
+
+    /*Redondear cada esquina con un valor*/
+    border-radius: 10px 20px 0 30px; /*--> border-radius: (arr-izq) (arr-der) (aba-der) (aba-izq)*/
+}
