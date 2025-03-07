@@ -1,0 +1,37 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 20px;
+}
+
+/*RGBA --> Red Green Blue Opacity --> (0-255) (0-255) (0-255) (0-1)*/
+.box {
+    width: 100px;
+    height: 100px;
+    background: rgb(94, 80, 180, 0.5);
+    margin: 20px;
+}
+
+/*#RRGGBBA --> Red Green Blue --> # (0-FF) (0-FF) (0-FF)*/
+/*Si no queremos ser muy especificos o simplemente se repiten 
+dos letras de un grupo de color --> # (0-F) (0-F) (0-F) (0-F) 
+el ultimo es para la opacidad*/
+.box {
+    width: 100px;
+    height: 100px;
+    background: #4342cc;
+    background: #61fA;
+    background: #61f; /*Es lo mismo que background: #6611ff; */
+    margin: 20px;
+}
+
+/*HSL --> background: hsl(angulo de la rueda, saturacion% , iluminacion% )*/
+.box {
+    width: 100px;
+    height: 100px;
+    background: hsl(150, 40%, 75%);
+    margin: 20px;
+}
+
+/*Los colores pastel tienen una baja saturacion y una alta iluminacion*/
