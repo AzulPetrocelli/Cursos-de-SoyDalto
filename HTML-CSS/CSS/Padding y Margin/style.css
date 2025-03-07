@@ -1,0 +1,39 @@
+.formulario {
+    background: red;
+
+    /*Hacer esto*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*Es lo mismo que poner esto*/
+    padding: 10px;
+
+    /*si queremos dar varios padding para un mismo elemento seguimos este formato*/
+    /*padding: arriba derecha abajo izquierda --> va en el sentido de las agujas del reloj*/
+    padding: 10px 0 30px 40px;
+
+    /*padding: arriba-abajo izquierda-derecha*/
+    padding: 10px 20px;
+
+    /*El mismo criterio aplica para el margin*/
+    /*Hacer esto*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*Es lo mismo que poner esto*/
+    margin: 10px;
+
+    /*margin: arriba derecha abajo izquierda*/
+    margin: 10px 0 30px 40px;
+
+    /*margin: arriba-abajo izquierda-derecha*/
+    margin: 10px 20px;
+
+    /*Los margenes se superponen si son iguales o gana el margin mas grande si son distintos*/ 
+}
+
+.formulario-input {
+    padding: 10px;
+}
