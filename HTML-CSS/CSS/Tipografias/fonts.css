@@ -1,0 +1,44 @@
+/*2° forma de seleccionar una tipografia: Defino una fuente*/ 
+
+
+/*En este ejemplo defino una fuente llamada Dalto que en realidad es 
+la fuente que descargamos pero con otro nombre*/
+
+@font-face {
+    font-family: "Dalto";
+    src: url("fonts/Montserrat-Black.ttf") format("truetype");
+    /*format indica el formato del archivo en este caso truetype(ttf) 
+    esto hace que el navegador conozca el formato de antemano y por ende
+    cargue mas rapido*/
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Dalto";
+    src: url("fonts/Montserrat-Black.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Dalto";
+    src: url("fonts/Montserrat-Black.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Dalto";
+    src: url("fonts/Montserrat-Black.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Dalto";
+    src: url("fonts/Montserrat-Black.ttf") format("truetype");
+    font-weight: 900;
+}
+
+/*si ponemos en el css*/
+p {
+    font-family: dalto;
+    font-weight: 300; /*Como no definimos el weigth de 300 va a tomar el valor mas cercano que allamos definido en este caso en 400*/
+}
