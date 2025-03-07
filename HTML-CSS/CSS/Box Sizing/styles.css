@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 10px;
+}
+
+/*Por defecto aumenta el tamaño del div*/
+.box-default {
+    padding: 30px;
+    border: 5px solid black;
+}
+
+/*Con box-sizing:border-box; le estamos diciendo que 
+queremos ajuste el tamaño del contenido para que la caja
+conserve el mismo tamaño*/
+.box-new {
+    box-sizing: border-box;
+    padding: 30px;
+    border: 5px solid black;
+}
