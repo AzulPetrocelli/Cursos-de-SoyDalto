@@ -1,8 +1,8 @@
-#Todo lo que vamos a hacer funciona tanto con listas
-# como con tuplas
+#Todo lo que vamos a hacer funciona tanto 
+# para listas como para tuplas y conjutnos
 
-#Lista de mascotas
-mascotas = ["gato", "perro", "loro", "pez"]
+#Conjunto de mascotas
+mascotas = {"gato", "perro", "loro", "pez"}
 
 #Tupla con edades
 edades = (3, 5, 2, 1)
@@ -11,7 +11,7 @@ edades = (3, 5, 2, 1)
 for animal in mascotas:
     print(f"Ahora la variable animal es igual a: {animal}")
     
-#Iterar dos o mas listas y/o tuplas del mismo tamaño al mismo tiempo
+#Iterar dos o mas listas y/o tuplas y/o conjuntos del mismo tamaño al mismo tiempo
 for animal,edad in zip(mascotas,edades):
     print(f"Mi {animal} tiene {edad} años de edad")
 
