@@ -21,7 +21,7 @@ print(sys.path)
 #Agregamos la direccion de Funciones_buenas2 al final de sys
 sys.path.append("C:\\Users\\azulp\\Desktop\\Mis Cosas\\Cursos de SoyDalto\\Python\\Funciones_buenas2")
 
-import saludar as m_saludar
+import saludar2 as m_saludar
 
 saludo = m_saludar.saludo_raro("Azul")
 print(saludo)
