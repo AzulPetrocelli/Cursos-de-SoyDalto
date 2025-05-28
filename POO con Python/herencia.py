@@ -18,7 +18,7 @@ class Empleado(Persona):
 
 class Estudiante(Persona):
         #Redefino el constructor
-    def _init_(self, nombre, edad, nacionalidad, notas, universidad):
+    def __init__(self, nombre, edad, nacionalidad, notas, universidad):
         #Heredo los atributos del metodo __init()__ de la clase padre
         super().__init__(self,nombre, edad, nacionalidad)
         self.notas = notas
