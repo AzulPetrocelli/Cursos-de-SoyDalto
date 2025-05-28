@@ -1,3 +1,6 @@
+#Hay tres tipos de modulos, los que creamos nosotros, los que
+#  vienen de forma nativa en python()escritos en C) y los que crean otros
+
 #Importar el modulo "modulo_saludar" (sin la extencion .py)
 import modulo_saludar #Es un objeto namespace
 
@@ -7,22 +10,21 @@ print(saludo)
 
 print(type(modulo_saludar)) # <class 'module'>
 
-#Importae modulo y ponerle un nombre a un modulo
+#Importar modulo y ponerle un nombre
 import modulo_saludar as m_saludar 
+
+saludo = m_saludar.saludar("Azul")
+print(saludo)
 
 #Acceder al nombre real del modulo que importamos
 print(m_saludar.__name__)
 
-#Acceder al nombre real del modulo donde nos encontramos
+#Al tratar de acceder al nombre real del modulo donde nos encontramos nos devueve __main__
 print(__name__)
 
-#Ahora la funcion saludar es un metodo con otro nombre
-saludo = m_saludar.saludar("Azul")
-print(saludo)
-
-#Importar solo una funcion del modulo 
+#Importar solo UNA funcion del modulo 
 from modulo_saludar import saludar
-saludo = saludar("Azul")
+saludo = saludar("Azul") #ya no hace falta llamar al objeto
 print(saludo)
 
 #Importar solo una funcion y cambiarle el nombre
