@@ -4,6 +4,8 @@ cd ../ --> me muevo una carpeta hacia atras
 mkdir carpeta2 --> creamos una carpeta llamada "carpeta2"
 rmdir carpeta2 --> eliminamos la carpeta llamada "carpeta2"
 
+rm nombre_archivo --> elimina el archivo del directorio de trabajo
+
 git init --> Crea la carpeta oculta .git que tiene todos los archivos necesarios para nuestro repositorio
 
 ls --> lista de archivos de la carpeta en donde me encuentro (salvo archivos ocultos, para verlos agrego el flag -a)
@@ -13,6 +15,12 @@ git add . --> con el "." agrego todos los archivos de mi directorio de trabajo a
 git add ejemplo.txt --> agrego el archivo ejemplo.txt de mi directorio de trabajo al area de preparacion 
 git rm --cached ejemplo.txt --> regreso el archivo ejemplo.txt de mi area de preparacion a mi directorio de trabajo
 git status --> nos muestra info sobre nuestro directorio de trabajo y el staging area
+git status -s --> lo mismo que git status pero mas bonito, (M roja: modificado en el directorio de trabajo, M verde: modificado en el staging area)
 
 git commit --> guardo lo que estaba en el staging area al repositorio, puedo agregar un mensaje con el flag -m "mensaje" al final
 git commit -a --> guardo todos los archivos de mi directorio de trabajo sin tener que pasar por el staging area, puedo agregar un mensaje con el flag -m "mensaje" al final
+
+git checkout ejemplo.txt --> restaura el archivo a como estaba en el ultimo commit (mientras no este en staging area)
+git reset --hard --> restaura el archivo a como estaba en el ultimo commit, descartando los cambios en el directorio y en el staging gracias al flag --hard
+
+git mv ejemplo.txt ejemplito.txt --> cambio el nombre del archivo "ejemplo.txt" por "ejemplito.txt"
