@@ -1,0 +1,18 @@
+cd carpeta1 --> me muevo a la carpeta1.
+cd ../ --> me muevo una carpeta hacia atras
+
+mkdir carpeta2 --> creamos una carpeta llamada "carpeta2"
+rmdir carpeta2 --> eliminamos la carpeta llamada "carpeta2"
+
+git init --> Crea la carpeta oculta .git que tiene todos los archivos necesarios para nuestro repositorio
+
+ls --> lista de archivos de la carpeta en donde me encuentro (salvo archivos ocultos, para verlos agrego el flag -a)
+pwd --> muestra la ruta en donde estamos ubicados
+
+git add . --> con el "." agrego todos los archivos de mi directorio de trabajo al area de preparacion (staging area)
+git add ejemplo.txt --> agrego el archivo ejemplo.txt de mi directorio de trabajo al area de preparacion 
+git rm --cached ejemplo.txt --> regreso el archivo ejemplo.txt de mi area de preparacion a mi directorio de trabajo
+git status --> nos muestra info sobre nuestro directorio de trabajo y el staging area
+
+git commit --> guardo lo que estaba en el staging area al repositorio, puedo agregar un mensaje con el flag -m "mensaje" al final
+git commit -a --> guardo todos los archivos de mi directorio de trabajo sin tener que pasar por el staging area, puedo agregar un mensaje con el flag -m "mensaje" al final
